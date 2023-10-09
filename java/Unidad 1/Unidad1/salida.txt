@@ -1,0 +1,4 @@
+Dame un cadena de texto
+1 hola
+2 hola
+3 hola
