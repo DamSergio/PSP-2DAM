@@ -1,0 +1,3 @@
+Dime un numero y te dire si es primo
+Has seleccionado el numero:56
+El numero 56 no es primo
