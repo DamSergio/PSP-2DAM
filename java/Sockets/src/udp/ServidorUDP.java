@@ -9,7 +9,7 @@ public class ServidorUDP {
 	public static void main(String[] args) {
 		byte buffer[] = new byte[1024];
 		try {
-			DatagramSocket socket = new DatagramSocket(12345);
+			DatagramSocket socket = new DatagramSocket(12345); // Puerto
 			System.out.println("Esperando datagrama...");
 			
 			//2. Recibimos el datagrama de cliente
