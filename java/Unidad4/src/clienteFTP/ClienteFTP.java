@@ -248,6 +248,21 @@ public class ClienteFTP extends JFrame {
 		btnDel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// ELIMINAR FICHERO
+				try {
+					int index = client.printWorkingDirectory().equals("/") ? listDir.getSelectedIndex() : listDir.getSelectedIndex() - 1;
+					if (files[index].getType() == 0) {
+						File f = new File(files[index].getName());
+						if (client.deleteFile(f.getPath())) {
+							JOptionPane.showMessageDialog(null, "Fichero borrado", "borrar", JOptionPane.INFORMATION_MESSAGE);
+							cargarLista();
+		                } else {
+		                	JOptionPane.showMessageDialog(null, "Error al borrar archivo", "error", JOptionPane.ERROR_MESSAGE);
+		                }
+					}
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		btnDel.setEnabled(false);
@@ -259,6 +274,20 @@ public class ClienteFTP extends JFrame {
 		btnMkdir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// CREAR CARPETA
+				String nombre = JOptionPane.showInputDialog(null, "Escribe el nombre de la carpeta");
+				if (nombre == null || nombre.trim().length() == 0) {
+					JOptionPane.showMessageDialog(null, "Error, nombre null", "error", JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+				
+				try {
+					client.makeDirectory(nombre);
+					JOptionPane.showMessageDialog(null, "Carpeta creada", "Crear", JOptionPane.INFORMATION_MESSAGE);
+					cargarLista();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		btnMkdir.setEnabled(false);
@@ -270,6 +299,20 @@ public class ClienteFTP extends JFrame {
 		btnRm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				// ELIMINAR CARPETA
+				String nombre = JOptionPane.showInputDialog(null, "Escribe el nombre de la carpeta a eliminar");
+				if (nombre == null || nombre.trim().length() == 0) {
+					JOptionPane.showMessageDialog(null, "Error, nombre null", "error", JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+				
+				try {
+					client.removeDirectory(nombre);
+					JOptionPane.showMessageDialog(null, "Carpeta borrada", "borrar", JOptionPane.INFORMATION_MESSAGE);
+					cargarLista();
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 			}
 		});
 		btnRm.setEnabled(false);
