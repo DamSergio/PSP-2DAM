@@ -1,0 +1,7 @@
+¿Quieres ser un experto en Python?
+
+Python es un lenguaje de programación de alto nivel, interpretado, de propósito general y
+ multiplataforma. Fue creado a finales de los años 80 por Guido van Rossum y se ha vuelto 
+ muy popular debido a su sintaxis clara y legible, así como a su amplia comunidad de 
+ desarrolladores.
+ 

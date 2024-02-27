@@ -1,0 +1,15 @@
+Descubre las novedades de Ciencia de Datos 
+
+La ciencia de datos es un campo interdisciplinario que utiliza métodos científicos, 
+procesos, algoritmos y sistemas para extraer conocimiento y percepciones valiosas de datos 
+estructurados y no estructurados. Esta disciplina combina elementos de estadísticas, 
+matemáticas, informática y dominios específicos del conocimiento para analizar conjuntos 
+de datos grandes y complejos.
+
+El proceso típico de ciencia de datos incluye la recopilación de datos, 
+su limpieza y preprocesamiento, análisis exploratorio, modelado predictivo o descriptivo, 
+y la interpretación de resultados para la toma de decisiones informadas. 
+Se utilizan una variedad de técnicas y herramientas, como aprendizaje automático, 
+minería de datos, visualización de datos y análisis estadístico, para obtener información 
+útil de los datos.
+

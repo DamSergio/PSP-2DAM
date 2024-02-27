@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "sergio ballesteros",
+        "correo_electronico": "sergio.ballesteroscedenilla@riberadeltajo.es",
+        "tags_de_intereses": ["Python", "JavaScript", "Ciencia de Datos"]
+    },
+    {
+        "nombre": "nombre apellidos2",
+        "correo_electronico": "sergio.ballesteroscedenilla@riberadeltajo.es",
+        "tags_de_intereses": ["Programación Web", "Inteligencia Artificial", "Frontend"]
+    },
+    {
+        "nombre": "nombre apellidos3",
+        "correo_electronico": "sergio.ballesteroscedenilla@riberadeltajo.es",
+        "tags_de_intereses": ["Machine Learning", "Big Data", "Data Mining"]
+    }
+]
